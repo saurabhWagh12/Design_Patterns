@@ -7,7 +7,7 @@ public class DBConnection{
         this.connected = t;
     }
 
-    public static DBConnection getConnection(){
+    synchronized public static DBConnection getConnection(){
         if(DB==null){
             DB = new DBConnection(true);
         }else{
