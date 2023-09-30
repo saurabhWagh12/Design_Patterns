@@ -1,0 +1,3 @@
+interface Refill{
+    Refill getRefill();
+}
