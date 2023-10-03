@@ -5,6 +5,12 @@ public class Main{
         v.play();
         v.login();
         v.play();
+        v.login();
+        v.login();
+        v.login();
+        v.login();
+
+        v.play();
         
     }
 }

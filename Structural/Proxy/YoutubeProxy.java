@@ -6,6 +6,7 @@ public class YoutubeProxy implements Video{
 
      public void login(){
         this.yt.login(true);
+        this.yt.count++;
     }
 
     public void logout(){
@@ -14,6 +15,12 @@ public class YoutubeProxy implements Video{
 
     @Override
     public void play() {
+
+        if(yt.count>=5){
+            System.out.println("Maximum limit exhausted (Try later)");
+            return;
+        }
+
         if(yt.loggedIn){
             yt.play();
         }else{
