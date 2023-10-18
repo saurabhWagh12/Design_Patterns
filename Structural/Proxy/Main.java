@@ -11,6 +11,7 @@ public class Main{
         v.login();
 
         v.play();
+        v.play();
         
     }
 }

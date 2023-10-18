@@ -17,7 +17,13 @@ public class YoutubeProxy implements Video{
     public void play() {
 
         if(yt.count>=5){
-            System.out.println("Maximum limit exhausted (Try later)");
+            System.out.println("Maximum limit exhausted Wait");
+            try {
+            Thread.sleep(10000);
+            yt.count=0;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             return;
         }
 
