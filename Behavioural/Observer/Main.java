@@ -7,6 +7,8 @@ public class Main {
         Binary b = new Binary(d);
         Octal o = new Octal(d);
         Hexa h = new Hexa(d);
+
+        // Updation of Number
         d.setNum(7);
 
         try {
