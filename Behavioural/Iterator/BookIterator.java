@@ -19,9 +19,8 @@ class BookIterator implements iterator{
 
     @Override
     public Object Next() {
-        idx++;
         try {
-            return this.list.get(idx);
+            return this.list.get(idx++);
         } catch (Exception e) {
             return null;
         }
