@@ -1,3 +1,3 @@
 abstract class Beverage {
-    public abstract double cost(); 
+    abstract public double cost(); 
 }
