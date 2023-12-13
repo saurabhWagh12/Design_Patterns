@@ -7,7 +7,9 @@ public class Leaf implements Employee{
         this.name = name;
         this.Position = p;
     }
-
+    public String getName(){
+        return this.name;
+    }
     public void addEmployee(Employee e){}
     public void showEmployee(){}
 
